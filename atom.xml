@@ -4,7 +4,7 @@
  <title>links</title>
  <link href="https://umtksa.github.io/links/atom.xml" rel="self"/>
  <link href="https://umtksa.github.io/links/"/>
- <updated>2022-02-04T18:54:57+01:00</updated>
+ <updated>2022-02-04T19:04:36+01:00</updated>
  <id>https://umtksa.github.io</id>
  <author>
    <name>umtksa</name>
@@ -31,7 +31,7 @@
  </entry>
  
  <entry>
-   <title>Stream Google Drive Videos</title>
+   <title>Stream Drive Videos</title>
    <link href="https://umtksa.github.io/links/2015/05/12/vlc-google-drive"/>
    <updated>2015-05-12T00:00:00+02:00</updated>
    <id>https://umtksa.github.io/2015/05/12/vlc-google-drive</id>
@@ -71,6 +71,24 @@
    <link href="https://umtksa.github.io/links/2015/05/12/presentation-rules"/>
    <updated>2015-05-12T00:00:00+02:00</updated>
    <id>https://umtksa.github.io/2015/05/12/presentation-rules</id>
+   <content type="html">
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Geometrize</title>
+   <link href="https://umtksa.github.io/links/2015/05/12/geometrize"/>
+   <updated>2015-05-12T00:00:00+02:00</updated>
+   <id>https://umtksa.github.io/2015/05/12/geometrize</id>
+   <content type="html">
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Email templates</title>
+   <link href="https://umtksa.github.io/links/2015/05/12/email-templates"/>
+   <updated>2015-05-12T00:00:00+02:00</updated>
+   <id>https://umtksa.github.io/2015/05/12/email-templates</id>
    <content type="html">
 </content>
  </entry>

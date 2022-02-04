@@ -66,7 +66,7 @@
     
         {
             "id": "https://umtksa.github.io/links/2015/05/12/vlc-google-drive",
-            "title": "Stream Google Drive Videos",
+            "title": "Stream Drive Videos",
             "summary": null,
             "content_text": "",
             "content_html": "",
@@ -169,6 +169,54 @@
             "url": "https://umtksa.github.io/links/2015/05/12/presentation-rules",
             
             "external_url": "http://www.jilles.net/perma/2020/06/05/presentation-rules.html",
+            
+            
+            
+            "date_published": "2015-05-12T00:00:00+02:00",
+            "date_modified": "2015-05-12T00:00:00+02:00",
+            
+                "author":  {
+                "name": "umtksa",
+                "url": null,
+                "avatar": null
+                }
+                
+            
+        },
+    
+        {
+            "id": "https://umtksa.github.io/links/2015/05/12/geometrize",
+            "title": "Geometrize",
+            "summary": null,
+            "content_text": "",
+            "content_html": "",
+            "url": "https://umtksa.github.io/links/2015/05/12/geometrize",
+            
+            "external_url": "https://www.geometrize.co.uk/",
+            
+            "tags": ["design","tools"],
+            
+            "date_published": "2015-05-12T00:00:00+02:00",
+            "date_modified": "2015-05-12T00:00:00+02:00",
+            
+                "author":  {
+                "name": "umtksa",
+                "url": null,
+                "avatar": null
+                }
+                
+            
+        },
+    
+        {
+            "id": "https://umtksa.github.io/links/2015/05/12/email-templates",
+            "title": "Email templates",
+            "summary": null,
+            "content_text": "",
+            "content_html": "",
+            "url": "https://umtksa.github.io/links/2015/05/12/email-templates",
+            
+            "external_url": "https://beefree.io/templates/",
             
             
             
