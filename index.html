@@ -36,10 +36,12 @@ layout: default
     <ul>
         {% for post in site.posts %}
         <li>
-		<a href="{{ post.link }}">{{ post.title }}</a><a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}" target="_blank"><i class="fa fa-rocket" aria-hidden="true"></i></a>
+		<a href="{{ post.link }}" target="_blank">{{ post.title }}</a><a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}"><i class="fa fa-rocket" aria-hidden="true"></i></a>
+    <p>{{ post.summary }}</p>
+
         </li>
-        <p>{{ post.summary }}</p>
+        <br>
         {% endfor %}
     </ul>
-    <br>
+
 </section>
