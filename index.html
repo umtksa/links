@@ -4,18 +4,6 @@ layout: default
 <section id="intro">
 </section>
 
-<div class="tegs">
-  {% assign tags = site.tags | sort %}
-  {% for tag in tags %}
-
-      <a class="posts" href="{{ site.url }}{{ site.baseurl }}/tag/{{ tag | first | slugify }}/">{{ tag[0] | replace:'-', ' '
-        }}{{ tag | last | size
-        }}{% unless forloop.last %}, {% endunless %}
-      </a>
-
-  {% endfor %}
-</div>
-
 <div class="search-article">
     <label for="search-input" aria-hidden="true">
         <!-- Magnifier -->
@@ -29,6 +17,18 @@ layout: default
 
     <input type="search" id="search-input" placeholder="Find some articles here" aria-label="Search">
     <ul id="search-results"></ul>
+</div>
+<br>
+<div class="tegs">
+  {% assign tags = site.tags | sort %}
+  {% for tag in tags %}
+
+      <a class="posts" href="{{ site.url }}{{ site.baseurl }}/tag/{{ tag | first | slugify }}/">{{ tag[0] | replace:'-', ' '
+        }}{{ tag | last | size
+        }}{% unless forloop.last %}, {% endunless %}
+      </a>
+
+  {% endfor %}
 </div>
 <section class="posts" id="Blog">
     <ul>
