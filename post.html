@@ -55,10 +55,11 @@
           '---\n' + '\n'
         var textToSaveAsBlob = new Blob([textToSave], {type:"text/plain"});
         var textToSaveAsURL = window.URL.createObjectURL(textToSaveAsBlob);
-        var fileNameToSaveAs = today + '-' + document.getElementById("title").value.replace(/ /g, "-")+ '.md';
+        var denemeform = today + '-' + document.getElementById("title").value.replace(/ /g, "-");
+        var fileNameToSaveAs = denemeform;
 
         var downloadLink = document.createElement("a");
-        downloadLink.download = fileNameToSaveAs;
+        downloadLink.download = fileNameToSaveAs + ".md";
         downloadLink.innerHTML = "Download File";
         downloadLink.href = textToSaveAsURL;
         downloadLink.onclick = destroyClickedElement;
@@ -79,19 +80,19 @@
   <div id="page">
 
     <label for="title">
-      <i>Title</i> <!-- =title - input example -->
+      <i>title</i> <!-- =title - input example -->
       <input id="title" size="40" placeholder="title">
     </label>
 
     <br>
 
     <label for="title">
-      <i>Link</i> <!-- =link - input example -->
+      <i>link</i> <!-- =link - input example -->
       <input id="link" size="40" placeholder="link">
     </label>
 
     <label for="summary">
-      <i>Sum</i> <!-- =link - input example -->
+      <i>sum</i> <!-- =link - input example -->
       <input id="summary" size="40" placeholder="summary">
     </label>
     <input type="hidden" id="date" size="40"> <!-- =date - hidden input example (automatically populated with current date in yyyy-mm-dd format) -->
@@ -99,13 +100,13 @@
     <br>
 
     <label for="tags">
-      <i>Tags</i>  <!-- =tags textarea example -->
+      <i>tags</i>  <!-- =tags textarea example -->
       <textarea id="tags" cols="40" rows="3" placeholder="tag tag tag"></textarea>
     </label>
 
 
     <button onclick="saveFormAsTextFile()">
-      Save to File
+      Save
     </button>
 
   </div>
