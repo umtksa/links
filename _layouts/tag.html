@@ -10,11 +10,11 @@ layout: default
     <a href="{{ site.url }}{{ site.baseurl }}">Home</a>
   </div>
   <ul>
-    {% for post in site.posts %}
-    {% if post.tags contains page.tag %}
-    <li><a class="post" href="{{ site.url }}{{ site.baseurl }}/{{ post.url }}">{{ post.title }}</a><time
-        datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %-d, %Y" }}</time></li>
-    {% endif %}
-    {% endfor %}
+      {% for post in site.posts %}
+      <li>
+  <a href="{{ post.link }}" target="_blank">{{ post.title }}</a>
+  <p>{{ post.summary }}</p>
+      </li>
+      {% endfor %}
   </ul>
 </section>
