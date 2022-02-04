@@ -2,17 +2,20 @@
 layout: default
 ---
 
+
+
 <section class="posts">
   <div class="flex-row-between">
     <h1>{{page.tag}}</h1>
     <a href="{{ site.url }}{{ site.baseurl }}">Home</a>
   </div>
   <ul>
-      {% for post in site.posts %}
-      <li>
-  <a href="{{ post.link }}" target="_blank">{{ post.title }}</a>
-  <p>{{ post.summary }}</p>
-      </li>
-      {% endfor %}
+    {% for post in site.posts %}
+    {% if post.tags contains page.tag %}
+    <li><a href="{{ post.link }}" target="_blank">{{ post.title }}</a>
+<p>{{ post.summary }}</p>
+</li>
+    {% endif %}
+    {% endfor %}
   </ul>
 </section>

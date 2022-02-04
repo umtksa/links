@@ -35,10 +35,9 @@ layout: default
 <section class="posts" id="Blog">
     <ul>
         {% for post in site.posts %}
-        <li>
-		<a href="{{ post.link }}" target="_blank">{{ post.title }}</a>
+        <li><a href="{{ post.link }}" target="_blank">{{ post.title }}</a>
     <p>{{ post.summary }}</p>
-        </li>
+    </li>
         {% endfor %}
     </ul>
 </section>
