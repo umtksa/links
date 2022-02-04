@@ -4,22 +4,13 @@
  <title>links</title>
  <link href="https://umtksa.github.io/links/atom.xml" rel="self"/>
  <link href="https://umtksa.github.io/links/"/>
- <updated>2022-02-04T18:03:10+01:00</updated>
+ <updated>2022-02-04T18:04:08+01:00</updated>
  <id>https://umtksa.github.io</id>
  <author>
    <name>umtksa</name>
    <email></email>
  </author>
 
- 
- <entry>
-   <title>Template Maker</title>
-   <link href="https://umtksa.github.io/links/2015/07/31/templatemaker"/>
-   <updated>2015-07-31T00:00:00+02:00</updated>
-   <id>https://umtksa.github.io/2015/07/31/templatemaker</id>
-   <content type="html">
-</content>
- </entry>
  
  <entry>
    <title>Social sizes</title>
@@ -80,6 +71,15 @@
    <link href="https://umtksa.github.io/links/2015/05/12/auto-mount"/>
    <updated>2015-05-12T00:00:00+02:00</updated>
    <id>https://umtksa.github.io/2015/05/12/auto-mount</id>
+   <content type="html">
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Template Maker</title>
+   <link href="https://umtksa.github.io/links/2015/05/01/templatemaker"/>
+   <updated>2015-05-01T00:00:00+02:00</updated>
+   <id>https://umtksa.github.io/2015/05/01/templatemaker</id>
    <content type="html">
 </content>
  </entry>
