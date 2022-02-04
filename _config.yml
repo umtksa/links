@@ -2,20 +2,20 @@ site: links
 title: links
 greetings: Hi 👋
 description: >-
-  just a minimalist, personal blog
+  public bookmarks
 lang: en-US
 timezone:  Europe/Rome
 repo: https://github.com/umtksa/links # site repo [optional]
 data-theme: dark # default theme "dark" | "light"
 
 author:
-  name: gesko
-  bio: just a minimalist, personal blog
+  name: umtksa
+  bio: public bookmarks
   userpicture:
   username: # general username
   github: # github username
   twitter: # twitter username
-  email: your-email@email.com # email adress
+  email:  # email adress
 
 # Font Settings
 googlewebfonts: family=Play:wght@400;700&family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,300;1,400;1,500;1,600;1,700;1,900
