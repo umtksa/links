@@ -139,7 +139,7 @@
       "title"    : "Redirect Jekyll URLs",
       "description" : "How to Redirect Pages in Jekyll",
       "category" : "",
-      "tags"     : "coding, jekyll",
+      "tags"     : "coding, jekyll, lake",
       "url"      : "/links/2017/11/10/redirect-jekyll-urls",
       "date"     : "2017-11-10 00:00:00 +0100"
     } ,
@@ -184,7 +184,7 @@
       "title"    : "Top monospaced fonts for coding",
       "description" : "Take a look at the fonts in this post that can make your text editor or terminal emulator look little bit nicer",
       "category" : "",
-      "tags"     : "coding",
+      "tags"     : "coding, lake",
       "url"      : "/links/2016/11/27/top-monospaced-fonts-for-coding",
       "date"     : "2016-11-27 00:00:00 +0100"
     } ,
@@ -202,7 +202,7 @@
       "title"    : "CSS hacks you may not know",
       "description" : "This is a collection of short CSS snippets I thought might be useful for beginners",
       "category" : "",
-      "tags"     : "css, coding, Food",
+      "tags"     : "css, coding, food",
       "url"      : "/links/2014/05/12/css-hacks-you-may-not-know",
       "date"     : "2014-05-12 00:00:00 +0200"
     } 
