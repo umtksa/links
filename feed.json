@@ -3,13 +3,13 @@
     "title": "links",
     "home_page_url": "https://umtksa.github.io/links/",
     "feed_url": "https://umtksa.github.io/links/feed.json",
-    "description": "just a minimalist, personal blog",
+    "description": "public bookmarks",
     "icon": "https://umtksa.github.io/links/apple-touch-icon.png",
     "favicon": "https://umtksa.github.io/links/favicon.ico",
     "expired": false,
     
     "author":  {
-        "name": "gesko",
+        "name": "umtksa",
         "url": null,
         "avatar": null
     },
@@ -32,7 +32,7 @@
             "date_modified": "2015-07-31T00:00:00+02:00",
             
                 "author":  {
-                "name": "gesko",
+                "name": "umtksa",
                 "url": null,
                 "avatar": null
                 }
@@ -56,7 +56,7 @@
             "date_modified": "2015-05-12T00:00:00+02:00",
             
                 "author":  {
-                "name": "gesko",
+                "name": "umtksa",
                 "url": null,
                 "avatar": null
                 }
