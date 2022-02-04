@@ -34,8 +34,8 @@ layout: default
     <ul>
         {% for post in site.posts %}
         <li>
-		<a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
-            <time><a href="{{ post.link }}"><i class="fa fa-rocket" aria-hidden="true"></i></a></time>
+		<a href="{{ post.link }}" target="_blank"><i class="fa fa-rocket" aria-hidden="true"></i></a><a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+            <time>{{ post.summary }}</time>
         </li>
         {% endfor %}
     </ul>
