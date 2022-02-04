@@ -3,6 +3,17 @@ layout: default
 ---
 
 <section id="intro">
+  <div class="tegs">
+    {% assign tags = site.tags | sort %}
+    {% for tag in tags %}
+
+        <a class="posts" href="{{ site.url }}{{ site.baseurl }}/tag/{{ tag | first | slugify }}/">{{ tag[0] | replace:'-', ' '
+          }}{{ tag | last | size
+          }}{% unless forloop.last %}, {% endunless %}
+        </a>
+
+    {% endfor %}
+  </div>
 </section>
 <!--
 <div class="search-article">
@@ -20,25 +31,15 @@ layout: default
 </div>
 <br>
 -->
-<div class="tegs">
-  {% assign tags = site.tags | sort %}
-  {% for tag in tags %}
 
-      <a class="posts" href="{{ site.url }}{{ site.baseurl }}/tag/{{ tag | first | slugify }}/">{{ tag[0] | replace:'-', ' '
-        }}{{ tag | last | size
-        }}{% unless forloop.last %}, {% endunless %}
-      </a>
-
-  {% endfor %}
-</div>
 <section class="posts" id="Blog">
     <ul>
         {% for post in site.posts %}
         <li>
-		<a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a><a href="{{ post.link }}" target="_blank"><i class="fa fa-rocket" aria-hidden="true"></i></a>
-
+		<a href="{{ post.link }}">{{ post.title }}</a><a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}" target="_blank"><i class="fa fa-rocket" aria-hidden="true"></i></a>
         </li>
         <p>{{ post.summary }}</p>
         {% endfor %}
     </ul>
+    <br>
 </section>
