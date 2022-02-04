@@ -37,6 +37,15 @@
     } ,
   
     {
+      "title"    : "Public Apis",
+      "description" : "",
+      "category" : "",
+      "tags"     : "nodered",
+      "url"      : "/links/2015/05/12/public-apis",
+      "date"     : "2015-05-12 00:00:00 +0200"
+    } ,
+  
+    {
       "title"    : "Presentation rules",
       "description" : "",
       "category" : "",
