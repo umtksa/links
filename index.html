@@ -36,8 +36,9 @@ layout: default
         {% for post in site.posts %}
         <li>
 		<a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a><a href="{{ post.link }}" target="_blank"><i class="fa fa-rocket" aria-hidden="true"></i></a>
-            <p>{{ post.summary }}</p>
+
         </li>
+        <p>{{ post.summary }}</p>
         {% endfor %}
     </ul>
 </section>
