@@ -18,18 +18,3 @@ layout: default
     {% endfor %}
   </ul>
 </section>
-
-<section class="tags">
-  <h2>All tags:</h2>
-  {% assign tags = site.tags | sort %}
-  {% for tag in tags %}
-  <ul>
-    <li>
-	    <a class="posts" href="{{ site.url }}{{ site.baseurl }}/tag/{{ tag | first | slugify }}/">{{ tag[0] | replace:'-', ' '
-        }} ({{ tag | last | size
-        }}){% unless forloop.last %}, {% endunless %}
-      </a>
-    </li>
-  </ul>
-  {% endfor %}
-</section>
