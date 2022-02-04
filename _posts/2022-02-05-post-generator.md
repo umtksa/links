@@ -1,8 +1,7 @@
 ---
 layout: post
-title: post generator
+title: new post
 link: https://umtksa.github.io/links/post.html
-summary: jekyll post generator
+summary: generate md files
 tags: code tools
 ---
-
