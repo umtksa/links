@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Stream Google Drive Videos
+title: Stream Drive Videos
 link: https://bytesbin.com/play-google-drive-video-in-vlc/
-summary: Play and Stream Google Drive Videos on VLC
+summary: Stream Google Drive Videos on VLC
 tags: android
 ---
