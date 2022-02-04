@@ -4,7 +4,17 @@ layout: default
 <section id="intro">
 </section>
 
+<div class="tegs">
+  {% assign tags = site.tags | sort %}
+  {% for tag in tags %}
 
+      <a class="posts" href="{{ site.url }}{{ site.baseurl }}/tag/{{ tag | first | slugify }}/">{{ tag[0] | replace:'-', ' '
+        }}{{ tag | last | size
+        }}{% unless forloop.last %}, {% endunless %}
+      </a>
+
+  {% endfor %}
+</div>
 
 <div class="search-article">
     <label for="search-input" aria-hidden="true">
@@ -20,23 +30,11 @@ layout: default
     <input type="search" id="search-input" placeholder="Find some articles here" aria-label="Search">
     <ul id="search-results"></ul>
 </div>
-<div class="tegs">
-  {% assign tags = site.tags | sort %}
-  {% for tag in tags %}
-
-      <a class="posts" href="{{ site.url }}{{ site.baseurl }}/tag/{{ tag | first | slugify }}/">{{ tag[0] | replace:'-', ' '
-        }}{{ tag | last | size
-        }}{% unless forloop.last %}, {% endunless %}
-      </a>
-
-  {% endfor %}
-</div>
 <section class="posts" id="Blog">
     <ul>
         {% for post in site.posts %}
         <li>
 		<a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
-            <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %d, %Y" }}</time>
         </li>
         {% endfor %}
     </ul>
