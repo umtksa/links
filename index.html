@@ -8,8 +8,8 @@ layout: default
     {% for tag in tags %}
 
         <a class="posts" href="{{ site.url }}{{ site.baseurl }}/tag/{{ tag | first | slugify }}/">{{ tag[0] | replace:'-', ' '
-          }}{{ tag | last | size
-          }}{% unless forloop.last %}, {% endunless %}
+          }}({{ tag | last | size
+          }}{% unless forloop.last %})  {% endunless %}
         </a>
 
     {% endfor %}
