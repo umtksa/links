@@ -1,6 +1,24 @@
 ---
 layout: default
 ---
+<section id="intro">
+    <div class="flex-row-between">
+        <h1>{{ site.greetings }}</h1>
+        <button title="Change theme" id="theme-toggle" onclick="modeSwitcher()">
+            <div></div>
+        </button>
+    </div>
+    <div class="bio">
+	    {{ site.description }}
+        <p>
+	    <a href="{{ site.url }}{{ site.baseurl }}/about/">> About me</a>
+        </p>
+    </div>
+
+
+</section>
+
+
 
 <div class="search-article">
     <label for="search-input" aria-hidden="true">
@@ -13,11 +31,12 @@ layout: default
         </svg>
     </label>
 
-    <input type="search" id="search-input" placeholder="Find some links here" aria-label="Search">
+    <input type="search" id="search-input" placeholder="Find some articles here" aria-label="Search">
     <ul id="search-results"></ul>
 </div>
 
 <section class="posts" id="Blog">
+    <h2>BLOG</h2>
     <ul>
         {% for post in site.posts %}
         <li>
