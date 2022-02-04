@@ -4,22 +4,13 @@
  <title>links</title>
  <link href="https://umtksa.github.io/links/atom.xml" rel="self"/>
  <link href="https://umtksa.github.io/links/"/>
- <updated>2022-02-04T23:20:13+01:00</updated>
+ <updated>2022-02-04T23:22:11+01:00</updated>
  <id>https://umtksa.github.io</id>
  <author>
    <name>umtksa</name>
    <email></email>
  </author>
 
- 
- <entry>
-   <title>deneme</title>
-   <link href="https://umtksa.github.io/links/2022/02/05/deneme"/>
-   <updated>2022-02-05T00:00:00+01:00</updated>
-   <id>https://umtksa.github.io/2022/02/05/deneme</id>
-   <content type="html">
-</content>
- </entry>
  
  <entry>
    <title>html form to text</title>
