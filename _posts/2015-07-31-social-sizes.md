@@ -2,6 +2,6 @@
 layout: post
 title: Social sizes
 link: https://socialsizes.io/
-summary: Image and Video sizes for Social Media.
+summary: Image and video sizes for social media
 tags: design
 ---
