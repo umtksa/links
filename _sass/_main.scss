@@ -42,12 +42,12 @@ html[data-theme="light"] {
 	--main-text-color: #333;
 	--highlight-text-color: #6cb4a0;
 	--dark-text-color: #393e46;
-	--link-color: rgb(50, 87, 209);
+	--link-color: #000000;
 	--code-bg-color: rgb(245, 245, 245);
 
 	background-color: rgb(255, 255, 255);
 
-	
+
 
 	#theme-toggle div {
 		position: relative;
@@ -388,7 +388,7 @@ main {
   position: initial;
 
   .social-footer-icons {
-     
+
     .fa {
       font-size: 1.3rem;
       color: #a9a9a9;
@@ -449,7 +449,7 @@ color: #333;
 
 .search-article {
   position: relative;
- 
+
 
   label[for="search-input"] {
     position: relative;
@@ -543,7 +543,7 @@ color: #333;
       padding-left: 20px;
     }
   }
-} 	
+}
 
 
 .tags ul {
@@ -790,6 +790,6 @@ $link-color: var(--link-color);
     background: var(--code-bg-color);
     box-shadow: 0 0 1px rgba(0,0,0,0.20);
     z-index: 15;
-    
+
   }
 }
