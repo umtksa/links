@@ -17,58 +17,9 @@ layout: compress
 
 
 
-  <script>
-    function setTheme(theme) {
-      if (theme === "dark") {
-        document.documentElement.setAttribute('data-theme', 'dark');
-        window.localStorage.setItem('theme', 'dark');
-        document.getElementById("theme-toggle").classList.add('sun');
-        document.getElementById("theme-toggle").classList.remove('moon');
-      } else {
-        document.documentElement.setAttribute('data-theme', 'light');
-        window.localStorage.setItem('theme', 'light');
-        document.getElementById("theme-toggle").classList.add('moon');
-        document.getElementById("theme-toggle").classList.remove('sun');
-      }
-    }
-
-    let theme = localStorage.getItem('theme');
-
-    theme = theme || (window.matchMedia ? window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light' : 'light');
-
-    setTheme(theme);
-
-    function modeSwitcher() {
-      let currentMode = document.documentElement.getAttribute('data-theme');
-
-      if (currentMode === "dark") {
-        setTheme('light');
-      } else {
-        setTheme('dark');
-      }
-    }
-  </script>
-
-
 
 </body>
 
-
-
-{% if page.url == '/' %}
-  <script src="{{ site.url }}{{ site.baseurl }}/assets/js/simple-jekyll-search.js"></script>
-  <script>
-    var sjs = SimpleJekyllSearch({
-      searchInput: document.getElementById('search-input'),
-      resultsContainer: document.getElementById('search-results'),
-		      json: '{{ site.url }}{{ site.baseurl }}/search.json',
-      searchResultTemplate: '<li><a href="{url}" title="{description}">{title}</a></li>',
-      noResultsText: 'No results found..',
-      limit: 10,
-      fuzzy: true,
-    })
-  </script>
-  {% endif %}
 
 
 </html>
