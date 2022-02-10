@@ -4,13 +4,22 @@
  <title>links</title>
  <link href="https://umtksa.github.io/links/atom.xml" rel="self"/>
  <link href="https://umtksa.github.io/links/"/>
- <updated>2022-02-09T01:17:05+01:00</updated>
+ <updated>2022-02-10T01:03:46+01:00</updated>
  <id>https://umtksa.github.io</id>
  <author>
    <name>umtksa</name>
    <email></email>
  </author>
 
+ 
+ <entry>
+   <title>node-red mobile</title>
+   <link href="https://umtksa.github.io/links/2022/02/10/node-red-mobile"/>
+   <updated>2022-02-10T00:00:00+01:00</updated>
+   <id>https://umtksa.github.io/2022/02/10/node-red-mobile</id>
+   <content type="html">
+</content>
+ </entry>
  
  <entry>
    <title>raw pixel</title>
