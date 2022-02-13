@@ -4,7 +4,7 @@
  <title>links</title>
  <link href="https://umtksa.github.io/links/atom.xml" rel="self"/>
  <link href="https://umtksa.github.io/links/"/>
- <updated>2022-02-13T18:49:20+01:00</updated>
+ <updated>2022-02-13T18:51:28+01:00</updated>
  <id>https://umtksa.github.io</id>
  <author>
    <name>umtksa</name>
@@ -22,19 +22,19 @@
  </entry>
  
  <entry>
-   <title>test</title>
-   <link href="https://umtksa.github.io/links/2022/02/13/test"/>
+   <title>google sheet hacks</title>
+   <link href="https://umtksa.github.io/links/2022/02/13/google-sheet-hacks"/>
    <updated>2022-02-13T00:00:00+01:00</updated>
-   <id>https://umtksa.github.io/2022/02/13/test</id>
+   <id>https://umtksa.github.io/2022/02/13/google-sheet-hacks</id>
    <content type="html">
 </content>
  </entry>
  
  <entry>
-   <title>google sheet hacks</title>
-   <link href="https://umtksa.github.io/links/2022/02/13/google-sheet-hacks"/>
+   <title>deneme 123</title>
+   <link href="https://umtksa.github.io/links/2022/02/13/deneme-123"/>
    <updated>2022-02-13T00:00:00+01:00</updated>
-   <id>https://umtksa.github.io/2022/02/13/google-sheet-hacks</id>
+   <id>https://umtksa.github.io/2022/02/13/deneme-123</id>
    <content type="html">
 </content>
  </entry>
