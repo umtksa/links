@@ -17,6 +17,30 @@
 "items": [
     
         {
+            "id": "https://umtksa.github.io/links/2022/02/13/useful-google-sheets-formulas",
+            "title": "useful google sheets formulas",
+            "summary": null,
+            "content_text": "",
+            "content_html": "",
+            "url": "https://umtksa.github.io/links/2022/02/13/useful-google-sheets-formulas",
+            
+            "external_url": "https://www.makeuseof.com/crazy-google-sheets-formulas-extremely-useful/",
+            
+            
+            
+            "date_published": "2022-02-13T00:00:00+01:00",
+            "date_modified": "2022-02-13T00:00:00+01:00",
+            
+                "author":  {
+                "name": "umtksa",
+                "url": null,
+                "avatar": null
+                }
+                
+            
+        },
+    
+        {
             "id": "https://umtksa.github.io/links/2022/02/10/node-red-mobile",
             "title": "node-red mobile",
             "summary": null,
