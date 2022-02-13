@@ -4,7 +4,7 @@
  <title>links</title>
  <link href="https://umtksa.github.io/links/atom.xml" rel="self"/>
  <link href="https://umtksa.github.io/links/"/>
- <updated>2022-02-13T19:08:35+01:00</updated>
+ <updated>2022-02-13T19:12:49+01:00</updated>
  <id>https://umtksa.github.io</id>
  <author>
    <name>umtksa</name>
@@ -89,15 +89,6 @@
    <link href="https://umtksa.github.io/links/2015/06/12/auto-mount"/>
    <updated>2015-06-12T00:00:00+02:00</updated>
    <id>https://umtksa.github.io/2015/06/12/auto-mount</id>
-   <content type="html">
-</content>
- </entry>
- 
- <entry>
-   <title>Stream Drive Videos</title>
-   <link href="https://umtksa.github.io/links/2015/05/12/vlc-google-drive"/>
-   <updated>2015-05-12T00:00:00+02:00</updated>
-   <id>https://umtksa.github.io/2015/05/12/vlc-google-drive</id>
    <content type="html">
 </content>
  </entry>

@@ -233,30 +233,6 @@
         },
     
         {
-            "id": "https://umtksa.github.io/links/2015/05/12/vlc-google-drive",
-            "title": "Stream Drive Videos",
-            "summary": null,
-            "content_text": "",
-            "content_html": "",
-            "url": "https://umtksa.github.io/links/2015/05/12/vlc-google-drive",
-            
-            "external_url": "https://bytesbin.com/play-google-drive-video-in-vlc/",
-            
-            
-            
-            "date_published": "2015-05-12T00:00:00+02:00",
-            "date_modified": "2015-05-12T00:00:00+02:00",
-            
-                "author":  {
-                "name": "umtksa",
-                "url": null,
-                "avatar": null
-                }
-                
-            
-        },
-    
-        {
             "id": "https://umtksa.github.io/links/2015/05/12/scraping-web",
             "title": "Web Scraping 101",
             "summary": null,
