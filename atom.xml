@@ -4,13 +4,22 @@
  <title>links</title>
  <link href="https://umtksa.github.io/links/atom.xml" rel="self"/>
  <link href="https://umtksa.github.io/links/"/>
- <updated>2022-02-22T17:32:36+01:00</updated>
+ <updated>2022-02-24T12:11:02+01:00</updated>
  <id>https://umtksa.github.io</id>
  <author>
    <name>umtksa</name>
    <email></email>
  </author>
 
+ 
+ <entry>
+   <title>raspberry pi watchdog</title>
+   <link href="https://umtksa.github.io/links/2022/02/24/raspberry-pi-watchdog"/>
+   <updated>2022-02-24T00:00:00+01:00</updated>
+   <id>https://umtksa.github.io/2022/02/24/raspberry-pi-watchdog</id>
+   <content type="html">
+</content>
+ </entry>
  
  <entry>
    <title>raspberrypi FM</title>

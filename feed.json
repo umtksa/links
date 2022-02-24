@@ -17,6 +17,30 @@
 "items": [
     
         {
+            "id": "https://umtksa.github.io/links/2022/02/24/raspberry-pi-watchdog",
+            "title": "raspberry pi watchdog",
+            "summary": null,
+            "content_text": "",
+            "content_html": "",
+            "url": "https://umtksa.github.io/links/2022/02/24/raspberry-pi-watchdog",
+            
+            "external_url": "https://diode.io/raspberry%20pi/running-forever-with-the-raspberry-pi-hardware-watchdog-20202/",
+            
+            
+            
+            "date_published": "2022-02-24T00:00:00+01:00",
+            "date_modified": "2022-02-24T00:00:00+01:00",
+            
+                "author":  {
+                "name": "umtksa",
+                "url": null,
+                "avatar": null
+                }
+                
+            
+        },
+    
+        {
             "id": "https://umtksa.github.io/links/2022/02/22/raspberrypi-fm",
             "title": "raspberrypi FM",
             "summary": null,
