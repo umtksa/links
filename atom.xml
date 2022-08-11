@@ -4,7 +4,7 @@
  <title>links</title>
  <link href="https://umtksa.github.io/links/atom.xml" rel="self"/>
  <link href="https://umtksa.github.io/links/"/>
- <updated>2022-07-01T19:30:58+02:00</updated>
+ <updated>2022-08-11T12:30:39+02:00</updated>
  <id>https://umtksa.github.io</id>
  <author>
    <name>umtksa</name>
@@ -170,15 +170,6 @@
    <link href="https://umtksa.github.io/links/2015/05/12/presentation-rules"/>
    <updated>2015-05-12T00:00:00+02:00</updated>
    <id>https://umtksa.github.io/2015/05/12/presentation-rules</id>
-   <content type="html">
-</content>
- </entry>
- 
- <entry>
-   <title>Geometrize</title>
-   <link href="https://umtksa.github.io/links/2015/05/12/geometrize"/>
-   <updated>2015-05-12T00:00:00+02:00</updated>
-   <id>https://umtksa.github.io/2015/05/12/geometrize</id>
    <content type="html">
 </content>
  </entry>
