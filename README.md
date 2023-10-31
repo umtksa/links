@@ -1,7 +1,4 @@
 # Links
-
-for generating posts use [post.html](https://umtksa.github.io/links/post)
-
 By using github actions, github pages and jekyll I made myself a public bookmark service
 you can see it [here](https://umtksa.github.io/links/){:target="_blank"}
 
