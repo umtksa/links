@@ -1,6 +1,6 @@
 # Links
 By using github actions, github pages and jekyll I made myself a public bookmark service
-you can see it [here](https://umtksa.github.io/links/){:target="_blank"}
+you can see it [here](https://umtksa.github.io/links/)
 
 every link in my "bookmarks" is a jekyll post, posts just directing you to url at the yaml so markdown files are only yaml frontmatter without content.
 
