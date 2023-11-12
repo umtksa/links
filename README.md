@@ -63,18 +63,18 @@ echo "new link posted"
 
 ```
 
-And [here](https://umtksa.github.io/links/post){:target="_blank"} is the static form I use to generate markdown files with proper name and frontmatter. Its just a static html file with a download button that generate md file for you to save in your _posts folder.
-based on [this](https://www.simongriffee.com/notebook/form-to-txt/){:target="_blank"} page.
+And [here](https://umtksa.github.io/links/post) is the static form I use to generate markdown files with proper name and frontmatter. Its just a static html file with a download button that generate md file for you to save in your _posts folder.
+based on [this](https://www.simongriffee.com/notebook/form-to-txt/) page.
 
-For sending links from my mobile phone running iOS I'm using [this siri shortcut](https://www.icloud.com/shortcuts/65a5ef0312ec4b0cae187dfe0f33349c){:target="_blank"} to generate a markdown file in _posts folder on dropbox. If you want to use it just change the "destination Path" to your own path.
+For sending links from my mobile phone running iOS I'm using [this siri shortcut](https://www.icloud.com/shortcuts/65a5ef0312ec4b0cae187dfe0f33349c) to generate a markdown file in _posts folder on dropbox. If you want to use it just change the "destination Path" to your own path.
 
 Some useful links:
 
-[github repo](https://github.com/umtksa/links){:target="_blank"}
+[github repo](https://github.com/umtksa/links)
 
-My theme is based on [this](https://github.com/P0WEX/Gesko){:target="_blank"} theme
+My theme is based on [this](https://github.com/P0WEX/Gesko)theme
 
-[Jekyll documentation](https://jekyllrb.com/docs/continuous-integration/github-actions/){:target="_blank"} about using github actions for jekyll.
+[Jekyll documentation](https://jekyllrb.com/docs/continuous-integration/github-actions/) about using github actions for jekyll.
 
 peace.
 
