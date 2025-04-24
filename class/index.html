@@ -1,58 +1,112 @@
-<div>Teachable Machine Audio Model</div>
-<button type="button" onclick="init()">Start</button>
-<div id="label-container"></div>
-<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.3.1/dist/tf.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/speech-commands@0.4.0/dist/speech-commands.min.js"></script>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Audio Emoji Classifier</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://raw.githubusercontent.com/umtksa/links/refs/heads/master/class/tf.min.js"></script>
+    <script src="https://raw.githubusercontent.com/umtksa/links/refs/heads/master/class/speech-commands.min.js"></script>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+            font-family: sans-serif;
+        }
+        #label-container {
+            font-size: 10em; /* Make the emoji large */
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="label-container">🤔</div> <script type="text/javascript">
+        // more documentation available at
+        // https://github.com/tensorflow/tfjs-models/tree/master/speech-commands
 
-<script type="text/javascript">
-    // more documentation available at
-    // https://github.com/tensorflow/tfjs-models/tree/master/speech-commands
+        // the link to your model provided by Teachable Machine export panel
+        // IMPORTANT: Replace the placeholder below with your actual model URL
 
-    // the link to your model provided by Teachable Machine export panel
-    const URL = "{{https://raw.githubusercontent.com/umtksa/links/refs/heads/master/class/}}";
-
-    async function createModel() {
-        const checkpointURL = "https://raw.githubusercontent.com/umtksa/links/refs/heads/master/class/model.json"; // model topology
-        const metadataURL = "https://raw.githubusercontent.com/umtksa/links/refs/heads/master/class/metadata.json"; // model metadata
-
-        const recognizer = speechCommands.create(
-            "BROWSER_FFT", // fourier transform type, not useful to change
-            undefined, // speech commands vocabulary feature, not useful for your models
-            checkpointURL,
-            metadataURL);
-
-        // check that model and metadata are loaded via HTTPS requests.
-        await recognizer.ensureModelLoaded();
-
-        return recognizer;
-    }
-
-    async function init() {
-        const recognizer = await createModel();
-        const classLabels = recognizer.wordLabels(); // get class labels
+        let recognizer;
+        let classLabels;
         const labelContainer = document.getElementById("label-container");
-        for (let i = 0; i < classLabels.length; i++) {
-            labelContainer.appendChild(document.createElement("div"));
+
+        async function createModel() {
+            const checkpointURL = "https://raw.githubusercontent.com/umtksa/links/refs/heads/master/class/model.json"; // model topology
+            const metadataURL = "https://raw.githubusercontent.com/umtksa/links/refs/heads/master/class/metadata.json"; // model metadata
+
+            recognizer = speechCommands.create(
+                "BROWSER_FFT", // fourier transform type, not useful to change
+                undefined, // speech commands vocabulary feature, not useful for your models
+                checkpointURL,
+                metadataURL);
+
+            // check that model and metadata are loaded via HTTPS requests.
+            await recognizer.ensureModelLoaded();
+
+            return recognizer;
         }
 
-        // listen() takes two arguments:
-        // 1. A callback function that is invoked anytime a word is recognized.
-        // 2. A configuration object with adjustable fields
-        recognizer.listen(result => {
-            const scores = result.scores; // probability of prediction for each class
-            // render the probability scores per class
-            for (let i = 0; i < classLabels.length; i++) {
-                const classPrediction = classLabels[i] + ": " + result.scores[i].toFixed(2);
-                labelContainer.childNodes[i].innerHTML = classPrediction;
-            }
-        }, {
-            includeSpectrogram: true, // in case listen should return result.spectrogram
-            probabilityThreshold: 0.75,
-            invokeCallbackOnNoiseAndUnknown: true,
-            overlapFactor: 0.50 // probably want between 0.5 and 0.75. More info in README
-        });
+        async function init() {
+            recognizer = await createModel();
+            classLabels = recognizer.wordLabels(); // get class labels
+            // We no longer need to create divs for each label, just update the main container
 
-        // Stop the recognition in 5 seconds.
-        // setTimeout(() => recognizer.stopListening(), 5000);
-    }
-</script>
+            // listen() takes two arguments:
+            // 1. A callback function that is invoked anytime a word is recognized.
+            // 2. A configuration object with adjustable fields
+            recognizer.listen(result => {
+                const scores = result.scores; // probability of prediction for each class
+                // Find the class with the highest probability
+                let maxScore = -Infinity;
+                let maxIndex = -1;
+                for (let i = 0; i < scores.length; i++) {
+                    if (scores[i] > maxScore) {
+                        maxScore = scores[i];
+                        maxIndex = i;
+                    }
+                }
+
+                const detectedClass = classLabels[maxIndex];
+                const probabilityThreshold = 0.75; // Use the same threshold as before
+
+                // Update the emoji based on the detected class and probability
+                if (maxScore > probabilityThreshold) {
+                    switch (detectedClass) {
+                        case "cakmak":
+                            labelContainer.innerHTML = "🔥"; // Flame emoji for cakmak
+                            break;
+                        case "kahve":
+                            labelContainer.innerHTML = "☕"; // Coffee emoji for kahve
+                            break;
+                        case "koh":
+                            labelContainer.innerHTML = "🤧"; // Sneezing face emoji for koh
+                            break;
+                        default:
+                            // For any other detected class (including _background_noise_ if it exceeds threshold)
+                            labelContainer.innerHTML = "🤔"; // Thinking face emoji
+                            break;
+                    }
+                } else {
+                    // If no class meets the threshold, show the thinking face
+                    labelContainer.innerHTML = "🤔";
+                }
+
+            }, {
+                includeSpectrogram: false, // No need for spectrogram
+                probabilityThreshold: probabilityThreshold, // Use the defined threshold
+                invokeCallbackOnNoiseAndUnknown: true, // Still listen for noise/unknown
+                overlapFactor: 0.50 // probably want between 0.5 and 0.75. More info in README
+            });
+
+            console.log("Listening started...");
+        }
+
+        // Start the recognition automatically when the window loads
+        window.onload = init;
+
+    </script>
+</body>
+</html>
