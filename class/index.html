@@ -9,11 +9,11 @@
     // https://github.com/tensorflow/tfjs-models/tree/master/speech-commands
 
     // the link to your model provided by Teachable Machine export panel
-    const URL = "{{https://raw.githubusercontent.com/umtksa/links/refs/heads/master/class/.}}";
+    const URL = "{{https://raw.githubusercontent.com/umtksa/links/refs/heads/master/class/}}";
 
     async function createModel() {
-        const checkpointURL = URL + "model.json"; // model topology
-        const metadataURL = URL + "metadata.json"; // model metadata
+        const checkpointURL = "https://raw.githubusercontent.com/umtksa/links/refs/heads/master/class/model.json"; // model topology
+        const metadataURL = "https://raw.githubusercontent.com/umtksa/links/refs/heads/master/class/metadata.json"; // model metadata
 
         const recognizer = speechCommands.create(
             "BROWSER_FFT", // fourier transform type, not useful to change
