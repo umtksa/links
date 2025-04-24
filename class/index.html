@@ -38,14 +38,15 @@
     </style>
 </head>
 <body>
-    <button type="button" onclick="init()">Start</button>
+    <button type="button" onclick="init()">Başlat</button>
 
     <div id="label-container">🤔</div> <script type="text/javascript">
         // more documentation available at
         // https://github.com/tensorflow/tfjs-models/tree/master/speech-commands
 
         // the link to your model provided by Teachable Machine export panel
-        // IMPORTANT: Replace the placeholder below with your actual model UR
+        // IMPORTANT: Replace the placeholder below with your actual model URL
+        
 
         let recognizer;
         let classLabels;
@@ -55,7 +56,6 @@
         async function createModel() {
             const checkpointURL = "https://raw.githubusercontent.com/umtksa/links/refs/heads/master/class/model.json"; // model topology
             const metadataURL = "https://raw.githubusercontent.com/umtksa/links/refs/heads/master/class/metadata.json"; // model metadata
-
             // Create the recognizer model
             recognizer = speechCommands.create(
                 "BROWSER_FFT", // fourier transform type, not useful to change
@@ -83,12 +83,15 @@
                  classLabels = recognizer.wordLabels(); // get class labels
             }
 
+            // Hide the start button after it's clicked
+            document.querySelector('button').style.display = 'none';
+
 
             // The probability threshold for a class to be considered detected.
             // Adjust this value if the model is not detecting sounds reliably.
             // Lowering it might make it more sensitive but could also trigger on noise.
             // Raising it makes it less sensitive, requiring higher confidence.
-            const probabilityThreshold = 0.5; // You can adjust this value
+            const probabilityThreshold = 0.75; // You can adjust this value
 
             // listen() takes two arguments:
             // 1. A callback function that is invoked anytime a word is recognized.
@@ -119,6 +122,9 @@
                         case "koh":
                             labelContainer.innerHTML = "🤧"; // Sneezing face emoji for koh
                             break;
+                        case "mouse": // Added case for "mouse"
+                            labelContainer.innerHTML = "🐭"; // Mouse emoji for mouse
+                            break;
                          case "_background_noise_":
                              labelContainer.innerHTML = "🤫"; // Shushing face for background noise (optional)
                              break;
@@ -140,11 +146,10 @@
             });
 
             console.log("Listening started...");
-            // You might want to disable the button here to prevent clicking again
-            document.querySelector('button').disabled = true;
+            // The button is now hidden instead of just disabled
         }
 
-        // The init function is now called by clicking the button instead of window.onload
+        // The init function is now called by clicking the button
 
     </script>
 </body>
