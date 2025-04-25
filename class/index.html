@@ -91,7 +91,7 @@
             // Adjust this value if the model is not detecting sounds reliably.
             // Lowering it might make it more sensitive but could also trigger on noise.
             // Raising it makes it less sensitive, requiring higher confidence.
-            const probabilityThreshold = 0.5; // You can adjust this value
+            const probabilityThreshold = 0.40; // You can adjust this value
 
             // listen() takes two arguments:
             // 1. A callback function that is invoked anytime a word is recognized.
@@ -120,10 +120,10 @@
                             labelContainer.innerHTML = "☕"; // Coffee emoji for kahve
                             break;
                         case "koh":
-                            labelContainer.innerHTML = "🤧"; // Sneezing face emoji for koh
+                            labelContainer.innerHTML = "💀"; // Sneezing face emoji for koh
                             break;
                         case "mouse": // Added case for "mouse"
-                            labelContainer.innerHTML = "🐭"; // Mouse emoji for mouse
+                            labelContainer.innerHTML = "👨🏻‍💻"; // Mouse emoji for mouse
                             break;
                          case "_background_noise_":
                              labelContainer.innerHTML = "🤫"; // Shushing face for background noise (optional)
